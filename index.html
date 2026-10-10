@@ -83,7 +83,7 @@
 <div class="container">
     <header>
         <h1>MathMatch 💕</h1>
-        <p>ค้นหาคู่คนที่ใช่ด้วยระบบคัดกรองโปรไฟล์และการคำนวณทางคณิตศาสตร์ประยุกต์</p>
+        <p>ค้นหาคู่ที่ใช่ด้วยระบบคัดกรองโปรไฟล์และการคำนวณทางคณิตศาสตร์</p>
     </header>
 
     <!-- ส่วนที่ 1: ข้อมูลส่วนตัว & เงื่อนไขคู่ -->
@@ -124,7 +124,7 @@
                 </label>
                 <label class="checkbox-label" style="color: #c2185b;">
                     <input type="checkbox" id="dealbreakerToggle" onchange="processMatching()"> 
-                    เปิดใช้ Dealbreaker Filter (w=5 ต่างเกิน 2 ตัดออก)
+                    เปิดใช้ Dealbreaker Filter (ข้อที่น้ำหนัก w=5 ต่างเกิน 2 ตัดออก)
                 </label>
             </div>
         </div>
@@ -353,7 +353,7 @@ function renderResults(results, userVector, useWeights, enableDealbreaker) {
                 <div class="explanation-box">
                     <b>💡 จุดที่ตรงกัน:</b> ไลฟ์สไตล์เด่นคือ <b>"${bestMatchCat}"</b>
                     <br>
-                    <button class="btn-math" onclick="openMathModal(${p.id})">📐 ขั้นตอนคณิตศาสตร์</button>
+                    <button class="btn-math" onclick="openMathModal(${p.id})">📐 ขั้นตอนการคำนวณทางคณิตศาสตร์</button>
                 </div>
             </div>
         `;
